@@ -1,0 +1,323 @@
+body {
+    background: #F7F4E9;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav {
+    width: 100vw;
+    height: 80px;
+    background-color: #333333;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+nav #logo {
+    font-size: 30px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+nav ul li a {
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    transition: 0.3s ease all;
+    font-weight: bold;
+}
+nav ul li a.active {
+    color: #F4A950;
+    font-weight: bold;
+}
+nav ul li a:hover {
+    color: #F4A950;
+}
+
+header {
+    width: 100vw;
+    height: calc(80vh - 80px);
+    background: url('https://images7.alphacoders.com/109/1097602.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header .dim {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #333333;
+    width: 100vw;
+    height: calc(80vh - 80px);
+    opacity: 0.75;
+}
+.header-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    z-index: 1;
+    gap: 50px;
+}
+.header-content h1 {
+    font-size: 7.5rem;
+    color: white;
+    font-weight: bold;
+    line-height: 0.8;
+}
+.header-content p {
+    font-size: 2rem;
+    color: white;
+}
+.header-content button {
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: #F4A950;
+    font-size: 2rem;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease all;
+}
+.header-content button:hover {
+    background-color: white;
+    color: #F4A950;
+}
+
+.home-section {
+    width: 100vw;
+    height: 750px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+    gap: 250px;
+}
+.home-section .home-section-content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 25px;
+    align-items: baseline;
+    color: #333333;
+    width: 750px;
+}
+.home-section .home-section-content h2 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+.home-section .home-section-content p {
+    font-size: 2rem;
+}
+.home-section img {
+    width: 750px;
+    border-radius: 10px;
+}
+
+.recipe-section {
+    width: 100vw;
+    height: 1000px;
+    background-color: #333333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 200px;
+}
+.recipe {
+    width: 500px;
+    height: 750px;
+    background: white;
+    border-radius: 10px;
+    position: relative;
+}
+.recipe img {
+    width: 500px;
+    height: 500px;
+    border-radius: 10px 10px 0 0;
+    object-fit: cover;
+}
+.recipe h3 {
+    padding: 10px;
+    font-size: 1.5rem;
+    color: #333333;
+    font-weight: bold;
+}
+.recipe p {
+    padding-left: 10px;
+    padding-bottom: 10px;
+    font-size: 1.3rem;
+    color: #333333;
+}
+.recipe a {
+    font-size: 1.3rem;
+    color: white;
+    font-weight: bold;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    background-color: #F4A950;
+    text-decoration: none;
+    height: 50px;
+    transition: ease all 0.3s;
+    line-height: 2;
+}
+.recipe a:hover {
+    background-color: white;
+    color: #F4A950;
+}
+
+.about-section {
+    width: 100vw;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #333333;
+    gap: 100px;
+}
+.about-section .about-section-content {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    width: 50%;
+}
+.about-section .about-section-content h2 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+.about-section .about-section-content p {
+    font-size: 2rem;
+}
+.about-section img {
+    border-radius: 10px;
+}
+
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-top: 50px;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    color: #333333;
+}
+.contact-section h2 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+form label {
+    display: block;
+    font-size: 2rem;
+    margin-bottom: 25px;
+}
+form input {
+    width: 500px;
+    height: 50px;
+    border: none;
+    border-bottom: 1px solid #333333;
+    background: #F7F4E9;
+    margin-bottom: 25px;
+}
+form input::placeholder {
+    color: #333333;
+    font-size: 2rem;
+    opacity: 0.5;
+}
+form textarea {
+    width: 500px;
+    height: 500px;
+    background: #F7F4E9;
+    border: none;
+    border-bottom: 1px solid #333333;
+}
+form textarea::placeholder {
+    color: #333333;
+    font-size: 2rem;
+    opacity: 0.5;
+}
+form button {
+    display: block;
+    width: 500px;
+    background-color: #F4A950;
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    margin-top: 25px;
+    cursor: pointer;
+    transition: all ease 0.3s;
+}
+form button:hover {
+    background-color: #333333;
+}
+
+footer {
+    display: flex;
+    width: 100vw;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+    border-top: 1px solid #333333;
+    padding: 10px;
+    color: #333333;
+}
+
+.body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.main {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.main .recipes-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+    gap: 25px;
+    width: 50%;
+    color: #333333;
+}
+.main .recipes-content h1 {
+    font-size: 4rem;
+}
+.main .recipes-content p {
+    font-size: 1.5rem;
+}
+.main .recipes-content li {
+    font-size: 1.5rem;
+}
+
+.main img {
+    border-radius: 10px;
+    width: 900px;
+    height: 600px;
+    object-fit: cover;
+}
+
+iframe {
+    display: block;
+    margin: auto;
+    margin-top: 50px;
+}
